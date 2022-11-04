@@ -214,6 +214,13 @@
 		"delayPopupWin" : 3,
 		"delayMainWin" : 3,
 		"delayMainLose" : 0
+	},
+	"Level32" :
+	{
+		"delayPopupLose" :1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
 	}
 	
 }
