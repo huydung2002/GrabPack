@@ -1,0 +1,219 @@
+{
+	"Level1" :
+	{
+		"delayPopupLose" : 2,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 1
+	},
+	"Level2" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level3" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level4" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 2,
+		"delayMainLose" : 0
+	},
+	"Level5" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level6" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level7" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 2,
+		"delayMainLose" : 0
+	},
+	"Level8" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level9" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 2,
+		"delayMainLose" : 0
+	},
+	"Level10" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level11" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level12" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level13" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level14" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level15" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level16" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 4,
+		"delayMainWin" : 3,
+		"delayMainLose" : 0
+	},
+	"Level17" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 4,
+		"delayMainWin" : 3,
+		"delayMainLose" : 0
+	},
+	"Level18" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level19" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level20" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level21" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 4,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level22" :
+	{
+		"delayPopupLose" : 1,
+		"delayPopupWin" : 5,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level23" :
+	{
+		"delayPopupLose" :1,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level24" :
+	{
+		"delayPopupLose" :1,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level25" :
+	{
+		"delayPopupLose" :2,
+		"delayPopupWin" : 2,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level26" :
+	{
+		"delayPopupLose" :1,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level27" :
+	{
+		"delayPopupLose" :1,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level28" :
+	{
+		"delayPopupLose" :3,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level29" :
+	{
+		"delayPopupLose" :2,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},"Level30" :
+	{
+		"delayPopupLose" :1,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 1,
+		"delayMainLose" : 0
+	},
+	"Level31" :
+	{
+		"delayPopupLose" :1,
+		"delayPopupWin" : 3,
+		"delayMainWin" : 3,
+		"delayMainLose" : 0
+	}
+	
+}

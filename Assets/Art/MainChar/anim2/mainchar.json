@@ -1,0 +1,56 @@
+{ "skeleton": { "images": "C:/Users/Admin/Downloads/mainchar/images/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "chan2", "bone": "root", "attachment": "chan2" },
+	{ "name": "chan1", "bone": "root", "attachment": "chan1" },
+	{ "name": "than", "bone": "root", "attachment": "than" },
+	{ "name": "tay2", "bone": "root", "attachment": "tay2" },
+	{ "name": "tay1", "bone": "root", "attachment": "tay1" },
+	{ "name": "dau", "bone": "root", "attachment": "dau" },
+	{ "name": "emo_player1", "bone": "root", "attachment": "emo_player1" },
+	{ "name": "day2", "bone": "root", "attachment": "day2" },
+	{ "name": "day", "bone": "root", "attachment": "day" },
+	{ "name": "hand2", "bone": "root", "attachment": "hand2" },
+	{ "name": "hand1", "bone": "root", "attachment": "hand1" }
+],
+"skins": {
+	"default": {
+		"chan2": {
+			"chan2": { "x": 636, "y": -813, "width": 212, "height": 208 }
+		},
+		"chan1": {
+			"chan1": { "x": 416.5, "y": -820.5, "width": 177, "height": 195 }
+		},
+		"than": {
+			"than": { "x": 500, "y": -610.5, "width": 334, "height": 309 }
+		},
+		"tay2": {
+			"tay2": { "x": 276.5, "y": -624.5, "width": 251, "height": 291 }
+		},
+		"tay1": {
+			"tay1": { "x": 724.5, "y": -615, "width": 249, "height": 282 }
+		},
+		"dau": {
+			"dau": { "x": 495, "y": -322.5, "width": 498, "height": 441 }
+		},
+		"emo_player1": {
+			"emo_player1": { "x": 543.5, "y": -350, "width": 305, "height": 286 }
+		},
+		"day2": {
+			"day2": { "x": 852, "y": -712, "width": 118, "height": 102 }
+		},
+		"day": {
+			"day": { "x": 129, "y": -712, "width": 118, "height": 102 }
+		},
+		"hand2": {
+			"hand2": { "x": 859.5, "y": -589.5, "width": 213, "height": 247 }
+		},
+		"hand1": {
+			"hand1": { "x": 142.5, "y": -595.5, "width": 217, "height": 247 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
