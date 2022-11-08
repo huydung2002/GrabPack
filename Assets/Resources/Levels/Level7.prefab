@@ -127,7 +127,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   ignoreTimeScale: 1
   delay: 0
-  duration: 0.1
+  duration: 0.3
   steeperCurves: 0
   tweenGroup: 0
   useFixedUpdate: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
   onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
-  from: {x: -5, y: -5, z: 0}
+  from: {x: -10, y: -10, z: 0}
   to: {x: 5, y: 5, z: 0}
   quaternionLerp: 0
 --- !u!114 &8259010948016716343
@@ -307,6 +307,7 @@ PolygonCollider2D:
       - {x: -0.28667712, y: -0.9406708}
       - {x: 0.06251655, y: -1.0131772}
       - {x: 0.39123732, y: -0.7332151}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1440790911884849682
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +626,7 @@ PolygonCollider2D:
       - {x: -0.75093365, y: 1.0955694}
       - {x: -1.1522996, y: -0.068035126}
       - {x: -0.43157932, y: -0.55642}
+  m_UseDelaunayMesh: 0
 --- !u!1 &2869353491714775732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1788,3 +1790,4 @@ PolygonCollider2D:
       - {x: -0.09040731, y: -1.0713135}
       - {x: 0.38804948, y: -0.7720957}
       - {x: 0.514375, y: 0.81423753}
+  m_UseDelaunayMesh: 0
