@@ -894,9 +894,9 @@ MonoBehaviour:
   hazardLayer:
     serializedVersion: 2
     m_Bits: 128
-  loseStatus: 0
+  loseStatus: 1
   level: 1
-  maxLevel: 31
+  maxLevel: 32
   ended: 0
   win: 0
   character: {fileID: 2073685085}
