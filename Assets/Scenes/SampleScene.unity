@@ -2031,6 +2031,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3743011893578324084, guid: 5089715696109564b98baa0a85ce2367, type: 3}
+      propertyPath: m_Radius
+      value: 0.63434577
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743011893578324084, guid: 5089715696109564b98baa0a85ce2367, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.042430528
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743011893578324084, guid: 5089715696109564b98baa0a85ce2367, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0010299002
+      objectReference: {fileID: 0}
     - target: {fileID: 3743011893578324091, guid: 5089715696109564b98baa0a85ce2367, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2038,6 +2050,18 @@ PrefabInstance:
     - target: {fileID: 3743011893854475652, guid: 5089715696109564b98baa0a85ce2367, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743011893854475653, guid: 5089715696109564b98baa0a85ce2367, type: 3}
+      propertyPath: m_Radius
+      value: 0.6636281
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743011893854475653, guid: 5089715696109564b98baa0a85ce2367, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.010138303
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743011893854475653, guid: 5089715696109564b98baa0a85ce2367, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.029788446
       objectReference: {fileID: 0}
     - target: {fileID: 5661124988357540619, guid: 5089715696109564b98baa0a85ce2367, type: 3}
       propertyPath: m_IsActive
