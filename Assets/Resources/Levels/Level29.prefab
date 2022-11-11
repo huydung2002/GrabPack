@@ -135,7 +135,7 @@ MonoBehaviour:
   onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
-  from: {x: -5, y: -5, z: 0}
+  from: {x: -10, y: -10, z: 0}
   to: {x: 5, y: 5, z: 0}
   quaternionLerp: 0
 --- !u!114 &8259010948016716343
