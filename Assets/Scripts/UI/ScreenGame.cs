@@ -15,7 +15,8 @@ public class ScreenGame : ScreenBase
 	{
 		base.OnActive();
 		GameManager.instance.OnLevelLoaded += OnLevelLoaded;
-		GameManager.instance.OnLevelEnded += OnLevelEnded;
+        GameManager.instance.ReloadLevel();
+        GameManager.instance.OnLevelEnded += OnLevelEnded;
 	}
 
     private void OnLevelLoaded(int level)

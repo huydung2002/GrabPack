@@ -36,8 +36,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (this.level == 0) this.level = 1;
-        LoadLevel(this.level);
+       // if (this.level == 0) this.level = 1;
+      int oldlevl=  PlayerPrefs.GetInt("level", level);
+        LoadLevel(oldlevl);
     }
     // Update is called once per frame
     void LateUpdate()
@@ -68,6 +69,7 @@ public class GameManager : MonoBehaviour
         {
             StartCoroutine(HideCharacterHand(win));
         }
+        
         OnLevelEnded?.Invoke(win);
     }
 
@@ -115,7 +117,9 @@ public class GameManager : MonoBehaviour
             hand.pathFinding = pathFiniding;
         }
         UpdateLoseStatus();
+
         StartLevel();
+        PlayerPrefs.SetInt("level", level);
     }
     void UpdateLoseStatus(){
         var characterSprite = character.GetComponentInChildren<CharacterSprite>();
