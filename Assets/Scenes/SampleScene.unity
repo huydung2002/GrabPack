@@ -2095,6 +2095,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.02175668
       objectReference: {fileID: 0}
+    - target: {fileID: 3743011893578324087, guid: 5089715696109564b98baa0a85ce2367, type: 3}
+      propertyPath: m_TagString
+      value: Grap
+      objectReference: {fileID: 0}
     - target: {fileID: 3743011893578324091, guid: 5089715696109564b98baa0a85ce2367, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2114,6 +2118,10 @@ PrefabInstance:
     - target: {fileID: 3743011893854475653, guid: 5089715696109564b98baa0a85ce2367, type: 3}
       propertyPath: m_Offset.y
       value: 0.024715686
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743011893854475655, guid: 5089715696109564b98baa0a85ce2367, type: 3}
+      propertyPath: m_TagString
+      value: Grap
       objectReference: {fileID: 0}
     - target: {fileID: 5661124988357540619, guid: 5089715696109564b98baa0a85ce2367, type: 3}
       propertyPath: m_IsActive

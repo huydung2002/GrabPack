@@ -430,6 +430,7 @@ GameObject:
   - component: {fileID: 6273535217478347512}
   - component: {fileID: 898163110064069657}
   - component: {fileID: 1723598247244232062}
+  - component: {fileID: 7219007115649714237}
   m_Layer: 7
   m_Name: GrabableObject
   m_TagString: Goal
@@ -542,6 +543,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be04574a33fc6ab44a411a54647ab18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7219007115649714237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747383733377223202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a3d525acce63f44aee89dbb12e8930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 6273535217478347512}
 --- !u!1 &3310711926563571380
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +703,7 @@ PolygonCollider2D:
       - {x: -4.38933, y: -0.3311959}
       - {x: 5.7744956, y: -0.38652265}
       - {x: 5.692213, y: 0.5082}
+  m_UseDelaunayMesh: 0
 --- !u!1 &3712456263750920563
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,6 +766,7 @@ PolygonCollider2D:
       - {x: -7.632677, y: -0.3311959}
       - {x: 3.4792032, y: -0.33662474}
       - {x: 3.4967155, y: 0.5082}
+  m_UseDelaunayMesh: 0
 --- !u!1 &4368147694406075467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,6 +1230,7 @@ PolygonCollider2D:
       - {x: -4.38933, y: -0.3311959}
       - {x: 3.4792032, y: -0.33662474}
       - {x: 3.4967155, y: 0.5082}
+  m_UseDelaunayMesh: 0
 --- !u!1 &8722671689748782231
 GameObject:
   m_ObjectHideFlags: 0
