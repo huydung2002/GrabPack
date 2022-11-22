@@ -1194,6 +1194,7 @@ GameObject:
   - component: {fileID: 6504402468528869442}
   - component: {fileID: 6504402468528869443}
   - component: {fileID: 6504402468528869452}
+  - component: {fileID: 6584244287565361945}
   m_Layer: 0
   m_Name: AnchorObject
   m_TagString: Goal
@@ -1296,6 +1297,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192462480daf9994d9b33d4c86ff3e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6584244287565361945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504402468528869453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a3d525acce63f44aee89dbb12e8930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 6504402468528869442}
 --- !u!1 &7642054134897163724
 GameObject:
   m_ObjectHideFlags: 0

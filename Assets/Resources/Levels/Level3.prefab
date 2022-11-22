@@ -486,6 +486,7 @@ PolygonCollider2D:
       - {x: 1.1230756, y: -0.7255255}
       - {x: 1.0629739, y: 0.5585073}
       - {x: 0.9658438, y: 1.4707671}
+  m_UseDelaunayMesh: 0
 --- !u!1 &4007476365451090472
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,8 +923,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6504402468528869441}
   - component: {fileID: 6504402468528869442}
-  - component: {fileID: 6504402468528869443}
   - component: {fileID: 6504402468528869452}
+  - component: {fileID: 161430795404781252}
+  - component: {fileID: 1823527387622908714}
   m_Layer: 0
   m_Name: AnchorObject
   m_TagString: Goal
@@ -998,22 +1000,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &6504402468528869443
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6504402468528869453}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &6504402468528869452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,6 +1012,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192462480daf9994d9b33d4c86ff3e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &161430795404781252
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504402468528869453}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.13, y: 1.91}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.13, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!114 &1823527387622908714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504402468528869453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a3d525acce63f44aee89dbb12e8930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 6504402468528869442}
 --- !u!1 &7642054134897163724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,3 +1197,4 @@ PolygonCollider2D:
       - {x: -10.193948, y: -0.3311959}
       - {x: 3.4792032, y: -0.33662474}
       - {x: 3.4967155, y: 0.5082}
+  m_UseDelaunayMesh: 0

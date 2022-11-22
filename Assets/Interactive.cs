@@ -10,7 +10,7 @@ public class Interactive : MonoBehaviour
     {
         if (other.gameObject.tag == "Grap")
         {
-            sprite.color = Color.red;
+            sprite.color = Color.yellow;
         }
         
         Debug.Log("cham");
