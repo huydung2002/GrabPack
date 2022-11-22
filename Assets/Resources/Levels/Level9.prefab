@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45584094506423172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.82, y: 4.89, z: -0.11298397}
+  m_LocalPosition: {x: 2.5, y: 1.55, z: -0.11298397}
   m_LocalScale: {x: 0.2777778, y: 0.5555556, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 5049762619941609189}
-  delay: 0
+  delay: 1
 --- !u!114 &7567642887506108462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,6 +916,7 @@ PolygonCollider2D:
       - {x: -1.9499999, y: -0.42999998}
       - {x: 1.9499999, y: -0.42999998}
       - {x: 1.9499999, y: 0.42999998}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1416784490739298512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,7 +1549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3390803016099602105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.071, y: 1.6, z: -0.11298397}
+  m_LocalPosition: {x: 0.82, y: 4.9, z: -0.11298397}
   m_LocalScale: {x: 0.2777778, y: 0.5555556, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1629,7 +1630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 7702458838871422246}
-  delay: 0
+  delay: 1
 --- !u!1 &3466906506561095518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,6 +2989,7 @@ PolygonCollider2D:
       - {x: 4.2061834, y: 4.4894342}
       - {x: 4.008864, y: 5.005557}
       - {x: 2.3269465, y: 4.727408}
+  m_UseDelaunayMesh: 0
 --- !u!1 &7219345406029531136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3239,6 +3241,7 @@ PolygonCollider2D:
       - {x: 2.1399999, y: -3.125}
       - {x: 2.1399999, y: 3.085}
       - {x: 2.1, y: 3.125}
+  m_UseDelaunayMesh: 0
 --- !u!1 &7648249358163537341
 GameObject:
   m_ObjectHideFlags: 0
@@ -3602,7 +3605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8307297192927892150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.82000005, y: 4.8599997, z: 0}
+  m_LocalPosition: {x: 2.5, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3741,6 +3744,7 @@ PolygonCollider2D:
       - {x: 0.96999997, y: -3.125}
       - {x: 0.96999997, y: 3.085}
       - {x: 0.93, y: 3.125}
+  m_UseDelaunayMesh: 0
 --- !u!1 &8629590182581302829
 GameObject:
   m_ObjectHideFlags: 0
