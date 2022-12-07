@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
     public event Action<int> OnLevelLoaded;
     public event Action<bool> OnLevelEnded;
     public bool switchMainPoseOnEnd;
+    internal static bool removeAds =false;
+    internal static bool debug=false;
 
     private void Awake()
     {

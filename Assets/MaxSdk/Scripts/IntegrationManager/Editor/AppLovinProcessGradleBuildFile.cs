@@ -37,12 +37,14 @@ namespace AppLovinMax.Scripts.IntegrationManager.Editor
         private static readonly Regex TokenAppLovinPlugin = new Regex(".*apply plugin:.+?(?=applovin-quality-service).*");
 
         private const string BuildScriptMatcher = "buildscript";
-        private const string QualityServiceMavenRepo = "maven { url 'https://artifacts.applovin.com/android' }";
+        private const string QualityServiceMavenRepo = "maven { url 'https://artifacts.applovin.com/android'; content { includeGroupByRegex 'com.applovin.*' } }";
         private const string QualityServiceDependencyClassPath = "classpath 'com.applovin.quality:AppLovinQualityServiceGradlePlugin:+'";
         private const string QualityServiceApplyPlugin = "apply plugin: 'applovin-quality-service'";
         private const string QualityServicePlugin = "applovin {";
         private const string QualityServiceApiKey = "    apiKey '{0}'";
         private const string QualityServiceBintrayMavenRepo = "https://applovin.bintray.com/Quality-Service";
+        private const string QualityServiceNoRegexMavenRepo = "maven { url 'https://artifacts.applovin.com/android' }";
+
 
         // Legacy plugin detection variables
         private const string QualityServiceDependencyClassPathV3 = "classpath 'com.applovin.quality:AppLovinQualityServiceGradlePlugin:3.+'";
@@ -293,8 +295,8 @@ namespace AppLovinMax.Scripts.IntegrationManager.Editor
                 var dependencyClassPathUpdated = false;
                 foreach (var line in lines)
                 {
-                    // Bintray maven repo is no longer being used. Update to s3 maven repo.
-                    if (!mavenRepoUpdated && line.Contains(QualityServiceBintrayMavenRepo))
+                    // Bintray maven repo is no longer being used. Update to s3 maven repo with regex check
+                    if (!mavenRepoUpdated && (line.Contains(QualityServiceBintrayMavenRepo) || line.Contains(QualityServiceNoRegexMavenRepo)))
                     {
                         outputLines.Add(GetFormattedBuildScriptLine(QualityServiceMavenRepo));
                         mavenRepoUpdated = true;

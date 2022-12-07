@@ -408,8 +408,9 @@ namespace AppLovinMax.Scripts.IntegrationManager.Editor
         /// Downloads the plugin file for a given network.
         /// </summary>
         /// <param name="network">Network for which to download the current version.</param>
+        /// <param name="showImport">Whether or not to show the import window when downloading. Defaults to <c>true</c>.</param>
         /// <returns></returns>
-        public IEnumerator DownloadPlugin(Network network)
+        public IEnumerator DownloadPlugin(Network network, bool showImport = true)
         {
             var path = Path.Combine(Application.temporaryCachePath, GetPluginFileName(network)); // TODO: Maybe delete plugin file after finishing import.
 #if UNITY_2017_2_OR_NEWER
@@ -447,7 +448,7 @@ namespace AppLovinMax.Scripts.IntegrationManager.Editor
             else
             {
                 importingNetwork = network;
-                AssetDatabase.ImportPackage(path, true);
+                AssetDatabase.ImportPackage(path, showImport);
             }
 
             webRequest.Dispose();

@@ -40,6 +40,22 @@ public class UiManager : MonoBehaviour
             CantDraging();
         }
     }
+    public void ClickSkipads()
+    {
+        System.Action ClickReviewADS = () =>
+        {
+            //  this.OnCloseBtnClick();
+            SkipBtnClick();
+        };
+    #if UNITY_EDITOR
+        ClickReviewADS();
+    #else
+            if (AdManager.Ins.CheckHasRewardAds(true))
+        {
+            AdManager.Ins.ShowVideoAds("VideoAds_in_ClickToReview", ClickReviewADS);
+        }
+    #endif
+    }
     public void SkipBtnClick()
     {
         FindObjectOfType<AudioManager>().Play("Button");
@@ -50,6 +66,7 @@ public class UiManager : MonoBehaviour
         CanDraging();
         }
     }
+    
     public void xButton()
     {
         FindObjectOfType<AudioManager>().Play("Button");

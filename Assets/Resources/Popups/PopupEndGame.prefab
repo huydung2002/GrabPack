@@ -219,8 +219,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 462.7338, y: 142.30463, z: 0}
-  m_Center: {x: -2.5407257, y: -5.081543, z: 0}
+  m_Size: {x: 417, y: 61, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &4646901789294450147
 Animator:
   serializedVersion: 4
@@ -623,7 +623,7 @@ MonoBehaviour:
   disabledMaterial: {fileID: 0}
   onClick:
   - mTarget: {fileID: 7184401987089035558}
-    mMethodName: OnNextBtnClick
+    mMethodName: ClickSkipadsfail
     mParameters: []
     oneShot: 0
 --- !u!65 &920039719
@@ -723,14 +723,14 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 0.6117647}
   mPivot: 4
-  mWidth: 729
+  mWidth: 767
   mHeight: 1556
   mDepth: 0
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 0.4929306
+  aspectRatio: 0.468509
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -966,7 +966,7 @@ MonoBehaviour:
   disabledMaterial: {fileID: 0}
   onClick:
   - mTarget: {fileID: 7184401987089035558}
-    mMethodName: OnNextBtnClick
+    mMethodName: ClickSkipadsfail
     mParameters: []
     oneShot: 0
 --- !u!65 &1692999705

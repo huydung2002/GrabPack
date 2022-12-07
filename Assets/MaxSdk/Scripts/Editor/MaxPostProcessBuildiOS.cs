@@ -53,29 +53,16 @@ namespace AppLovinMax.Scripts.Editor
             "Smaato"
         };
 
-        private static List<string> DynamicLibrariesToEmbed
+        private static readonly List<string> DynamicLibrariesToEmbed = new List<string>
         {
-            get
-            {
-                var dynamicLibrariesToEmbed = new List<string>()
-                {
-                    "FBSDKCoreKit_Basics.xcframework",
-                    "HyprMX.xcframework",
-                    "OMSDK_Appodeal.xcframework",
-                    "OMSDK_Ogury.xcframework",
-                    "OMSDK_Pubnativenet.xcframework",
-                    "OMSDK_Smaato.xcframework"
-                };
-
-                if (ShouldEmbedSnapSdk())
-                {
-                    dynamicLibrariesToEmbed.Add("SAKSDK.framework");
-                    dynamicLibrariesToEmbed.Add("SAKSDK.xcframework");
-                }
-
-                return dynamicLibrariesToEmbed;
-            }
-        }
+            "FBSDKCoreKit_Basics.xcframework",
+            "HyprMX.xcframework",
+            "MobileFuseSDK.xcframework",
+            "OMSDK_Appodeal.xcframework",
+            "OMSDK_Ogury.xcframework",
+            "OMSDK_Pubnativenet.xcframework",
+            "OMSDK_Smaato.xcframework"
+        };
 
         private static List<string> SwiftLanguageNetworks
         {
@@ -188,12 +175,6 @@ namespace AppLovinMax.Scripts.Editor
             runpathSearchPaths += "@executable_path/Frameworks";
             project.SetBuildProperty(targetGuid, "LD_RUNPATH_SEARCH_PATHS", runpathSearchPaths);
 #endif
-
-            if (ShouldEmbedSnapSdk())
-            {
-                // Needed to build successfully on Xcode 12+, as Snap was build with latest Xcode but not as an xcframework
-                project.AddBuildProperty(targetGuid, "VALIDATE_WORKSPACE", "YES");
-            }
         }
 
         private static void LocalizeUserTrackingDescriptionIfNeeded(string localizedUserTrackingDescription, string localeCode, string buildPath, PBXProject project, string targetGuid)
@@ -357,7 +338,6 @@ namespace AppLovinMax.Scripts.Editor
             EnableConsentFlowIfNeeded(plist);
             AddSkAdNetworksInfoIfNeeded(plist);
             UpdateAppTransportSecuritySettingsIfNeeded(plist);
-            AddSnapAppStoreAppIdIfNeeded(plist);
 
             plist.WriteToFile(plistPath);
         }
@@ -565,25 +545,6 @@ namespace AppLovinMax.Scripts.Editor
             }
         }
 
-        private static void AddSnapAppStoreAppIdIfNeeded(PlistDocument plist)
-        {
-            var snapDependencyPath = Path.Combine(PluginMediationDirectory, "Snap/Editor/Dependencies.xml");
-            if (!File.Exists(snapDependencyPath)) return;
-
-            // App Store App ID is only needed for iOS versions 2.0.0.0 or newer.
-            var currentVersion = AppLovinIntegrationManager.GetCurrentVersions(snapDependencyPath);
-            var iosVersionComparison = MaxSdkUtils.CompareVersions(currentVersion.Ios, AppLovinSettings.SnapAppStoreAppIdMinVersion);
-            if (iosVersionComparison == MaxSdkUtils.VersionComparisonResult.Lesser) return;
-
-            if (AppLovinSettings.Instance.SnapAppStoreAppId <= 0)
-            {
-                MaxSdkLogger.UserError("Snap App Store App ID is not set. Please enter a valid App ID within the AppLovin Integration Manager window.");
-                return;
-            }
-
-            plist.root.SetInteger("SCAppStoreAppID", AppLovinSettings.Instance.SnapAppStoreAppId);
-        }
-
         /// <summary>
         /// Checks whether or not an adapter with the given version or newer exists.
         /// </summary>
@@ -601,21 +562,6 @@ namespace AppLovinMax.Scripts.Editor
             var currentVersion = AppLovinIntegrationManager.GetCurrentVersions(dependencyFilePath);
             var iosVersionComparison = MaxSdkUtils.CompareVersions(currentVersion.Ios, version);
             return iosVersionComparison != MaxSdkUtils.VersionComparisonResult.Lesser;
-        }
-
-        private static bool ShouldEmbedSnapSdk()
-        {
-            var snapDependencyPath = Path.Combine(PluginMediationDirectory, "Snap/Editor/Dependencies.xml");
-            if (!File.Exists(snapDependencyPath)) return false;
-
-            // Return true for UNITY_2019_3_OR_NEWER because app will crash on launch unless embedded.
-#if UNITY_2019_3_OR_NEWER
-            return true;
-#else
-            var currentVersion = AppLovinIntegrationManager.GetCurrentVersions(snapDependencyPath);
-            var iosVersionComparison = MaxSdkUtils.CompareVersions(currentVersion.Ios, "1.0.7.2");
-            return iosVersionComparison != MaxSdkUtils.VersionComparisonResult.Lesser;
-#endif
         }
 
 #if UNITY_2019_3_OR_NEWER
